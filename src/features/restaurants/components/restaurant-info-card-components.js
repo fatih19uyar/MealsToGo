@@ -4,15 +4,15 @@ import { Card } from "react-native-paper";
 import { Text } from "react-native";
 
 const RestaurantCard = styled(Card)`
-  background-color: white;
+  background-color: ${(probs) => probs.theme.colors.ui.quaternary};
 `;
 
 const RestaurantCard_Cover = styled(Card.Cover)`
-  background-color: white;
-  padding: 16px;
+  background-color: ${(probs) => probs.theme.colors.ui.quaternary};
+  padding: ${(probs) => probs.theme.space[3]};
 `;
 const Title = styled(Text)`
-  padding: 20px;
+  padding: ${(probs) => probs.theme.lineHeights.copy}; // 20px
   color: ${(probs) => probs.theme.colors.ui.primary};
 `;
 
