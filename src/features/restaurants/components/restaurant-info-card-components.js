@@ -13,7 +13,7 @@ const RestaurantCard_Cover = styled(Card.Cover)`
 `;
 const Title = styled(Text)`
   padding: 20px;
-  color: red;
+  color: ${(probs) => probs.theme.colors.ui.primary};
 `;
 
 export const RestaurantInfoCard = ({ restaurant = {} }) => {
